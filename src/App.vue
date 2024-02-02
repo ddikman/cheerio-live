@@ -57,7 +57,7 @@ watch(query, () => {
       />
 
     <span>This is the result:</span>
-    <div style="text-wrap: pre;">{{ output }}</div>
+    <div class="output">{{ output }}</div>
   </main>
 </template>
 
@@ -73,6 +73,10 @@ main {
 textarea {
   width: 100%;
   height: 200px;
+}
+
+.output {
+  white-space: break-spaces;
 }
 
 </style>
